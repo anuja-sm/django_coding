@@ -6,7 +6,7 @@
 The first thing to do is to clone the repository:
 
 ```sh
-$ git clone
+$ git clone https://github.com/anuja-sm/django_coding.git
 ```
 
 Create a virtual environment to install dependencies in and activate it:
