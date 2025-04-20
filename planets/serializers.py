@@ -1,9 +1,8 @@
 # serializers.py
 from rest_framework import serializers
-from .models import Planet
+from planets.models import Planet
 
 class PlanetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Planet
-        fields = '__all__'
-        read_only_fields = ('id',)
+        fields = ['id', 'name', 'population', 'terrains', 'climates']

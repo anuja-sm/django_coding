@@ -6,3 +6,4 @@ from .serializers import PlanetSerializer
 class PlanetViewSet(viewsets.ModelViewSet):
     queryset = Planet.objects.all()
     serializer_class = PlanetSerializer
+    lookup_field = 'id'
